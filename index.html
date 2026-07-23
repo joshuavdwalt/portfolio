@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joshua van der Walt | Portfolio</title>
+  <style>
+    /* ── Reset & Base ── */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      background: #f5f5f5;
+      line-height: 1.7;
+    }
+
+    /* ── Navigation ── */
+    nav {
+      background: #2c3e50;
+      padding: 14px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    nav ul li a {
+      color: #ecf0f1;
+      text-decoration: none;
+      font-size: 15px;
+    }
+    nav ul li a:hover { color: #3498db; }
+
+    /* ── Sections ── */
+    section {
+      max-width: 860px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 36px 40px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    h1 { font-size: 2rem; color: #2c3e50; }
+    h2 { font-size: 1.4rem; color: #2c3e50; margin-bottom: 16px; border-bottom: 2px solid #3498db; padding-bottom: 6px; }
+    p  { margin-bottom: 12px; }
+
+    /* ── Hero ── */
+    #home { text-align: center; padding: 50px 40px; }
+    #home .profile-photo {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center top;
+      border: 4px solid #3498db;
+      margin-bottom: 18px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    #home p.subtitle { color: #555; font-size: 1.05rem; margin-top: 8px; }
+    #home .links { margin-top: 20px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    #home .links a {
+      background: #2c3e50;
+      color: #fff;
+      padding: 10px 22px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: background 0.2s;
+    }
+    #home .links a:hover { background: #3498db; }
+
+    /* ── About ── */
+    #about table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    #about table td { padding: 8px 12px; border-bottom: 1px solid #eee; }
+    #about table td:first-child { font-weight: bold; color: #2c3e50; width: 160px; }
+
+    /* ── Skills ── */
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 6px;
+    }
+    .skill-tag {
+      background: #eaf4fb;
+      color: #2c3e50;
+      border: 1px solid #aed6f1;
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    /* ── Projects ── */
+    .project-card {
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      padding: 18px 20px;
+      margin-bottom: 16px;
+    }
+    .project-card h3 { color: #2c3e50; margin-bottom: 6px; font-size: 1.05rem; }
+    .project-card a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #3498db;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .project-card a:hover { text-decoration: underline; }
+
+    /* ── Contact ── */
+    #contact ul { list-style: none; }
+    #contact ul li { margin-bottom: 10px; font-size: 15px; }
+    #contact ul li a { color: #3498db; text-decoration: none; }
+    #contact ul li a:hover { text-decoration: underline; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    /* ── Fade-in animation ── */
+    section {
+      animation: fadeIn 0.5s ease both;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home">
+    <img src="Josh_Linked_crop.png" alt="Joshua van der Walt" class="profile-photo" />
+    <h1>Joshua van der Walt</h1>
+    <p class="subtitle">BSc Information Technology (Final Year) — North-West University</p>
+    <p class="subtitle" style="color:#3498db; font-size:0.95rem;">CMPG323 | Profile Development Assignment</p>
+    <div class="links">
+      <a href="#about">About Me</a>
+      <a href="#projects">My Projects</a>
+      <a href="https://www.linkedin.com/in/joshua-van-der-walt-798805424/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/joshuavdwalt" target="_blank">GitHub</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm Joshua van der Walt — a final-year BSc IT student at North-West University (NWU).
+      I am passionate about software development and problem-solving. I completed my Gr 12 at
+      Mandini Academy in 2022 and have since been building my technical skills through my degree.
+    </p>
+    <table>
+      <tr><td>Name</td><td>Joshua van der Walt</td></tr>
+      <tr><td>Degree</td><td>BSc Information Technology (Final Year)</td></tr>
+      <tr><td>University</td><td>North-West University (NWU)</td></tr>
+      <tr><td>High School</td><td>Mandini Academy (Gr 12, 2022)</td></tr>
+      <tr><td>Course</td><td>CMPG323</td></tr>
+      <tr><td>GitHub</td><td><a href="https://github.com/joshuavdwalt" target="_blank">@joshuavdwalt</a></td></tr>
+      <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/joshua-van-der-walt-798805424/" target="_blank">joshua-van-der-walt</a></td></tr>
+    </table>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <p><strong>Programming Languages</strong></p>
+    <div class="skills-grid">
+      <span class="skill-tag">HTML5</span>
+      <span class="skill-tag">CSS3</span>
+      <span class="skill-tag">JavaScript</span>
+      <span class="skill-tag">Python</span>
+      <span class="skill-tag">C++</span>
+      <span class="skill-tag">Java</span>
+    </div>
+    <br>
+    <p><strong>Tools & Platforms</strong></p>
+    <div class="skills-grid">
+      <span class="skill-tag">GitHub</span>
+      <span class="skill-tag">VS Code</span>
+      <span class="skill-tag">Git</span>
+      <span class="skill-tag">GitHub Pages</span>
+    </div>
+    <br>
+    <p><strong>Soft Skills</strong></p>
+    <div class="skills-grid">
+      <span class="skill-tag">Problem Solving</span>
+      <span class="skill-tag">Teamwork</span>
+      <span class="skill-tag">Communication</span>
+      <span class="skill-tag">Time Management</span>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>📁 Portfolio Website (Virtual CV)</h3>
+      <p>
+        A personal portfolio website built with HTML, CSS, and JavaScript as part of the
+        CMPG323 Profile Development assignment at NWU. Hosted on GitHub Pages.
+      </p>
+      <a href="https://github.com/joshuavdwalt/portfolio" target="_blank">🔗 View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>📁 Calculator App</h3>
+      <p>
+        A functional calculator application built as a programming project. 
+        Supports basic arithmetic operations with a clean, user-friendly interface.
+      </p>
+      <a href="https://github.com/joshuavdwalt/simple-calculator" target="_blank">🔗 View on GitHub</a>
+    </div>
+
+    <div class="project-card">
+      <h3>📁 GitHub Profile README</h3>
+      <p>
+        A customised GitHub profile README that serves as a landing page on my GitHub account,
+        showcasing who I am and what I work on.
+      </p>
+      <a href="https://github.com/joshuavdwalt/joshuavdwalt" target="_blank">🔗 View on GitHub</a>
+    </div>
+
+    <!-- Add more projects here as you complete them -->
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out through any of the platforms below:</p>
+    <ul>
+      <li>🐙 GitHub: <a href="https://github.com/joshuavdwalt" target="_blank">github.com/joshuavdwalt</a></li>
+      <li>💼 LinkedIn: <a href="https://www.linkedin.com/in/joshua-van-der-walt-798805424/" target="_blank">linkedin.com/in/joshua-van-der-walt</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2024 Joshua van der Walt | BSc IT — NWU | CMPG323 Assignment</p>
+  </footer>
+
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon='{"version":"2024.11.0","token":"f0f03d0605bf45f1a3b17cf7d5e6861f"}' crossorigin="anonymous"></script>
+</body>
+</html>
